@@ -7,6 +7,4 @@
 <i> script to check wether jre and jdk are installed and install them </i>
 
 ### cairodock.sh
-install cairo-dock without getting confused due to composer issues
-cairo dock,
-<i> script to install cairo-dock in order to avoid plugins issues, wil be updated to avoid composer issues</i>
+<i> Cairodock bothers new arch users informing them plug-ins is not installed, this script install cairo-dock and its requirements, will be updated to support composer issues in deepin and other ddes</i>
