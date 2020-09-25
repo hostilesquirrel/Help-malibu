@@ -14,3 +14,7 @@
 ### oschecker.sh {Arch linux}
 
 <i>Incase you have dual booted partitions, this is to check and other the other operating systems</i>
+
+### ohmyzshonarch.sh
+
+<i> Seems when installing ohmyzsh and set theme with eg ZSH_THEME=apple , youll notice it wont change, this script automates and installs, if already installed just type yay -Rncs grml-zsh-config </i>
