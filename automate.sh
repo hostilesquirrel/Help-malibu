@@ -1,3 +1,5 @@
+#still under construction
+
 #! /usr/bin/bash
 
 #This script is intended to make the installateion of my scripts easier
