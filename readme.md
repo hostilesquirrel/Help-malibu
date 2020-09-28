@@ -1,6 +1,9 @@
 ### Scripts and Uses
 
-### AUTOMATE.SH {if you are new and lazy git clone this script to automate your preferences, currently experimental}
+### HOW TO RUN LAZY INSTALL
+<img align="center" src="https://user-images.githubusercontent.com/44660508/94460404-5d443880-01c1-11eb-833b-3cb3066ec68f.png">
+<i> to run lazy install run bash automate.sh by only downloading the automate.sh
+by cloning::: still under constructiona though <b>
 ### blackarchrepo.sh {Arch linux}
 <i>is a script to help arch linux users run and install arch linux repo</i>
 
