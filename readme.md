@@ -1,5 +1,6 @@
 ### Scripts and Uses
 
+### AUTOMATE.SH {if you are new and lazy git clone this script to automate your preferences, currently experimental}
 ### blackarchrepo.sh {Arch linux}
 <i>is a script to help arch linux users run and install arch linux repo</i>
 
