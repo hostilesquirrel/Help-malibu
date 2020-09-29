@@ -5,11 +5,10 @@
 
  TYPE THE FOLLOWING AS WHOLE IN YOUR TERMINAL TO INSTALL
 <i><b>
-'''
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)"
-'''
+
 ```bash
-bash <(curl -fsSl- https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)
+copy link and run in terminal
+ <(curl -fsSl- https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)
 ```
 </i></b>
 
