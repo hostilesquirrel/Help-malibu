@@ -9,7 +9,7 @@
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)"
 '''
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)
+bash <(curl -fsSl- https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)
 ```
 </i></b>
 
