@@ -103,5 +103,6 @@ if [ "$SHELL" = "/usr/bin/zsh" ]; then
 	source .zshrc
 else [ "$SHELL" = "/usr/bin/bash" ]; then
 	source .bashrc
+fi
 
 echo " [✔] Done installing You can start the script anytime by typing {mikeylinux} on terminal"
