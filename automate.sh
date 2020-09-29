@@ -70,23 +70,25 @@ echo " [◉]  4. Make ohmyzsh work on arch {Arch linux}"
 echo " [◉]  5. Make blackarchrepo install on arch {Arch linux}"
 
 echo " [◉]  0. Read license agreement"
-read option
-cd $HOME/.automalibu/mikeylinuxep
 
-if [ "$option" == "1" ];then
+cd $HOME/.automalibu/mikeylinux
+read bazu
+
+
+if [ "$bazu"=="1" ];then
 	bash cariodock.sh
-elif [ "$option" == "2" ];then
+elif [ "$bazu" =="2" ];then
 	bash installjava.sh
 
-elif [ "$option" == "3" ]; then
+elif [ "$bazu"=="3" ]; then
 	bash oschecker.sh
 
-elif [ "$option" == "4" ]; then
+elif [ "$bazu"=="4" ]; then
 	bash ohmyzshonarch.shcd 
 
-elif [ "$option" == "5" ]; then
+elif [ "$bazu"=="5" ]; then
 	bash blackarchrepo.sh
-elif [ "$option" == "0" ]; then
+elif [ "$bazu"=="0" ]; then
 
 cat  LICENSE
 else
@@ -97,17 +99,8 @@ EOT
 chmod +x mikeylinux
 sudo mv mikeylinux /bin
 
-
-
-if [ -f "$HOME/.zshrc" ]; then
-	source $HOME/.zshrc
-	source $HOME/.bashrc
-elif [ -f "$HOME/.bashrc"]; then
-	source $HOME/.bashrc
-else
+#source $HOME/.zshrc
 source $HOME/.bashrc
-source $HOME/.zshrc
 
-fi
 
 echo " [✔] Done installing You can start the script anytime by typing {mikeylinux} on terminal"
