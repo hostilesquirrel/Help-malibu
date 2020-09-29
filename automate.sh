@@ -71,30 +71,26 @@ echo " [◉]  5. Make blackarchrepo install on arch {Arch linux}"
 
 echo " [◉]  0. Read license agreement"
 
-sudo echo "starting solver"
+sudo echo "switching to install dir # now type a number"
 cd $HOME/.automalibu/mikeylinuxep/
-pwd
 read bazu
 
+#Tempfix
 
-if [ "$bazu"==1 ];then
+if [ "$bazu" -eq "$a" ]; then
 	bash cariodock.sh
-
-elif [ "$bazu"==2 ];then
-	bash installjava.sh
-
-elif [ "$bazu"==3 ]; then
-	bash oschecker.sh
-
-elif [ "$bazu"==4 ]; then
-	bash ohmyzshonarch.sh
-
-elif [ "$bazu"==5 ]; then
-	bash blackarchrepo.sh
-elif [ "$bazu"==0 ]; then
-cat  LICENSE
-else
-	echo "no option selected"
+	elif [ "$bazu" -eq "$b" ]; then
+		bash installjava.sh
+		elif [ "$bazu" -eq "$c" ]; then
+			bash oschecker.sh
+			elif [ "$bazu" -eq "$d" ]; then
+				bash ohmyzshonarch.sh
+				elif [ "$bazu" -eq "$e" ]; then
+					bash blackarchrepo.sh
+					elif [ "$bazu" -eq "$f" ]; then
+						cat  LICENSE
+						else
+							echo "no option selected"
 fi
 
 EOT
