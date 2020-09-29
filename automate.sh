@@ -50,7 +50,7 @@ else
 fi
 
 
- cat <<EOT>> mikeylinux 
+cat <<EOT>> mikeylinux 
 
 echo"
 /  \/  \/___\|  |  //   __\\  |  /  
@@ -75,29 +75,25 @@ echo " [◉]  0. Read license agreement"
 
 read option
 
-if [ "$option" == 1 ];then
+if [ "$option" == "1" ];then
+	bash $HOME/.automalibu/mikeylinuxep/cariodock.sh
+elif [ "$option" == "2" ];then
+	bash $HOME/.automalibu/mikeylinuxep/installjava.sh
 
-sudo ~/.automalibu/.cariodock.sh
-elif [ "$option" == 2 ];then
+elif [ "$option" == "3" ]; then
+	bash $HOME/.automalibu/mikeylinuxep/oschecker.sh
 
-sudo ~/.automalibu/.installjava.sh
+elif [ "$option" == "4" ]; then
+	bash $HOME/.automalibu/mikeylinuxep/ohmyzshonarch.sh
 
-elif [ "$option" == 3 ]; then
+elif [ "$option" == "5" ]; then
+	bash $HOME/.automalibu/mikeylinuxep/blackarchrepo.sh
+elif [ "$option" == "0" ]; then
 
-sudo ~/.automalibu/.oschecker.sh
-
-elif [ "$option" == 4 ]; then
-
-sudo ~/.automalibu/.ohmyzshonarch.sh
-
-elif [ "$option" == 5 ]; then
-
-sudo ~/.automalibu/.blackarchrepo.sh
-
-elif [ "$option" == 0 ]; then
-
-cat ~/.automalibu/LICENSE
-
+cat  $HOME/.automalibu/mikeylinuxep/LICENSE
+else
+	echo "no option selected"
+fi
 
 EOT
 chmod +x mikeylinux
