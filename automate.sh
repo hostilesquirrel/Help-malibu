@@ -17,7 +17,8 @@ echo "
 /  _/  /___\/  _  \/  |  \/  \/  \  
 |  |---|   ||  |  ||  |  |>-    -<  
 \_____/\___/\__|__/\_____/\__/\__/  
-                                    
+    
+After install just type (mikeylinux)  start                               
 ";
 
 # Make Directory and clone the mikey linux ep
@@ -49,4 +50,54 @@ else
 fi
 
 
- 
+ cat <<EOT>> mikeylinux 
+#! /usr/bin/bash
+
+echo"
+/  \/  \/___\|  |  //   __\\  |  /  
+|  \/  ||   ||  _ < |   __| |   |   
+\__ \__/\___/|__|__\\_____/ \___/   
+                                    
+ ____   ___  _____  __ __  __  __   
+/  _/  /___\/  _  \/  |  \/  \/  \  
+|  |---|   ||  |  ||  |  |>-    -<  
+\_____/\___/\__|__/\_____/\__/\__/ 
+"
+
+echo " Choose a number to enable the script to launch for you "
+echo " [◉]  1. Launch cairo dock installer {Arch linux}"
+echo " [◉]  2. Install java properly {Arch linux}"
+echo " [◉]  3. Check other os and update grub {Arch linux}"
+echo " [◉]  4. Make ohmyzsh work on arch {Arch linux}"
+echo " [◉]  5. Make blackarchrepo install on arch {Arch linux}"
+
+echo " [◉]  0. Read license agreement"
+
+
+read option
+
+if [ "$option" == 1 ];then
+
+sudo ~/.automalibu/.cariodock.sh
+elif [ "$option" == 2 ];then
+
+sudo ~/.automalibu/.installjava.sh
+
+elif [ "$option" == 3 ]; then
+
+sudo ~/.automalibu/.oschecker.sh
+
+elif [ "$option" == 4 ]; then
+
+sudo ~/.automalibu/.ohmyzshonarch.sh
+
+elif [ "$option" == 5 ]; then
+
+sudo ~/.automalibu/.blackarchrepo.sh
+
+elif [ "$option" == 0 ]; then
+
+cat ~/.automalibu/LICENSE
+
+
+EOT
