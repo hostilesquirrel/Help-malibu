@@ -51,7 +51,6 @@ fi
 
 
 cat <<EOT>> mikeylinux 
-
 echo"
 /  \/  \/___\|  |  //   __\\  |  /  
 |  \/  ||   ||  _ < |   __| |   |   
@@ -71,26 +70,25 @@ echo " [◉]  4. Make ohmyzsh work on arch {Arch linux}"
 echo " [◉]  5. Make blackarchrepo install on arch {Arch linux}"
 
 echo " [◉]  0. Read license agreement"
-
-
 read option
+cd $HOME/.automalibu/mikeylinuxep
 
 if [ "$option" == "1" ];then
-	bash $HOME/.automalibu/mikeylinuxep/cariodock.sh
+	bash cariodock.sh
 elif [ "$option" == "2" ];then
-	bash $HOME/.automalibu/mikeylinuxep/installjava.sh
+	bash installjava.sh
 
 elif [ "$option" == "3" ]; then
-	bash $HOME/.automalibu/mikeylinuxep/oschecker.sh
+	bash oschecker.sh
 
 elif [ "$option" == "4" ]; then
-	bash $HOME/.automalibu/mikeylinuxep/ohmyzshonarch.sh
+	bash ohmyzshonarch.shcd 
 
 elif [ "$option" == "5" ]; then
-	bash $HOME/.automalibu/mikeylinuxep/blackarchrepo.sh
+	bash blackarchrepo.sh
 elif [ "$option" == "0" ]; then
 
-cat  $HOME/.automalibu/mikeylinuxep/LICENSE
+cat  LICENSE
 else
 	echo "no option selected"
 fi
@@ -99,10 +97,17 @@ EOT
 chmod +x mikeylinux
 sudo mv mikeylinux /bin
 
-if [ "$SHELL" = "/usr/bin/zsh" ]; then
-	source .zshrc
-else [ "$SHELL" = "/usr/bin/bash" ]; then
-	source .bashrc
+
+
+if [ -f "$HOME/.zshrc" ]; then
+	source $HOME/.zshrc
+	source $HOME/.bashrc
+elif [ -f "$HOME/.bashrc"]; then
+	source $HOME/.bashrc
+else
+source $HOME/.bashrc
+source $HOME/.zshrc
+
 fi
 
 echo " [✔] Done installing You can start the script anytime by typing {mikeylinux} on terminal"
