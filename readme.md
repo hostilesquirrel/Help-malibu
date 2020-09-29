@@ -5,9 +5,12 @@
 
  TYPE THE FOLLOWING AS WHOLE IN YOUR TERMINAL TO INSTALL
 <i><b>
-'''bash
+'''
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)"
 '''
+```bash
+bash <(wget -qO- https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)
+```
 </i></b>
 
 <b>Copy the link above and paste it to your terminal to run automated install </b>
