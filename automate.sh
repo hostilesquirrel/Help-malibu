@@ -73,23 +73,25 @@ echo " [◉]  0. Read license agreement"
 
 sudo echo "starting solver"
 cd $HOME/.automalibu/mikeylinuxep/
+pwd
 read bazu
 
 
-if [ "$bazu"=="1" ];then
+if [ "$bazu"==1 ];then
 	bash cariodock.sh
-elif [ "$bazu"=="2" ];then
+
+elif [ "$bazu"==2 ];then
 	bash installjava.sh
 
-elif [ "$bazu"=="3" ]; then
+elif [ "$bazu"==3 ]; then
 	bash oschecker.sh
 
-elif [ "$bazu"=="4" ]; then
+elif [ "$bazu"==4 ]; then
 	bash ohmyzshonarch.sh
 
-elif [ "$bazu"=="5" ]; then
+elif [ "$bazu"==5 ]; then
 	bash blackarchrepo.sh
-elif [ "$bazu"=="0" ]; then
+elif [ "$bazu"==0 ]; then
 cat  LICENSE
 else
 	echo "no option selected"
