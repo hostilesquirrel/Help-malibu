@@ -29,9 +29,9 @@ if [ -d "$HOME/.automalibu/" ]; then
     echo "[◉] Previous installation detected, do you wanna replace [Y/n]:" ;
     read  kalpana
     if [ "$kalpana" = "y" ]; then
-        rm -rf ~/.automalibu
-   		mkdir ~/.automalibu
-		cd ~/.automalibu
+        rm -rf $HOME/.automalibu
+   		mkdir $HOME/.automalibu
+		cd $HOME/.automalibu
 		git clone https://github.com/hostilesquirrel/mikeylinuxep
 	else
 		if [ "$kalpana" = "n" ]; then
@@ -51,7 +51,6 @@ fi
 
 
  cat <<EOT>> mikeylinux 
-#! /usr/bin/bash
 
 echo"
 /  \/  \/___\|  |  //   __\\  |  /  
@@ -101,3 +100,5 @@ cat ~/.automalibu/LICENSE
 
 
 EOT
+chmod +x mikeylinux
+sudo mv mikeylinux /bin

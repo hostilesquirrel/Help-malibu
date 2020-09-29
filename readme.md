@@ -1,10 +1,20 @@
 ### Scripts and Uses
 
-### HOW TO RUN LAZY INSTALL
+### HOW TO RUN LAZY INSTALL {Still Under construction, You cant test it though}
 <img align="center" src="https://user-images.githubusercontent.com/44660508/94460404-5d443880-01c1-11eb-833b-3cb3066ec68f.png">
-<i> to run lazy install run bash automate.sh by only downloading the automate.sh
-by cloning::: still under constructiona though <b></i>
+
+<i> 
+Run lazy install, to install all the scripts<br>
+<b> after its done open new terminal and type mikeylinux</b></br>
+if you want to use lazy install alone clone this link or download this script alone
+<b> type git clone on your terminal and enter this link then run as root
+first chmod +x automate.sh then ./automate.sh </b>
+https://github.com/hostilesquirrel/mikeylinuxep/blob/master/automate.sh 
+</i>
+
+
 ### blackarchrepo.sh {Arch linux}
+
 <i>is a script to help arch linux users run and install arch linux repo</i>
 
 
@@ -13,12 +23,12 @@ by cloning::: still under constructiona though <b></i>
 
 
 ### cairodock.sh    {Arch linux}
-<i> Cairodock bothers new arch users informing them plug-ins is not installed, this script install cairo-dock and its requirements, will be updated to support composer issues in deepin and other ddes</i>
+<i> This script installs cairodock properly</i>
 
 ### oschecker.sh {Arch linux}
 
-<i>Incase you have dual booted partitions, this is to check and other the other operating systems</i>
+<i>Dual boost is the worst, detect and update grub with this script</i>
 
 ### ohmyzshonarch.sh {Arch linux}
 
-<i> Seems when installing ohmyzsh and set theme with eg ZSH_THEME=apple , youll notice it wont change, this script automates and installs, if already installed just type yay -Rncs grml-zsh-config </i>
+<i> Oh my zsh themes wont work, now let them work with this script</i>
