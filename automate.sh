@@ -2,6 +2,10 @@
 # Must run as root
 
 #This script is intended to make the installateion of my scripts easier
+echo "starting ............. $0"
+sleep 1
+echo "executing script at $(hostname)"
+sleep 3
 clear
 echo "
  __  __  ___  __ ___ _____ ___ ___  
@@ -17,10 +21,10 @@ echo "
 ";
 
 # Make Directory and clone the mikey linux ep
-Work_DIR="~/.automalibu"
+
 echo "[✔] Checking directories...";
- 	 
-if [ -d "$Work_DIR" ]; then
+sleep 1	 
+if [ -d "$HOME/.automalibu/" ]; then
     echo "[◉] Previous installation detected, do you wanna replace [Y/n]:" ;
     read  kalpana
     if [ "$kalpana" = "y" ]; then
