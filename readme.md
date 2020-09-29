@@ -4,7 +4,11 @@
 <img align="center" src="https://user-images.githubusercontent.com/44660508/94460404-5d443880-01c1-11eb-833b-3cb3066ec68f.png">
 
  TYPE THE FOLLOWING AS WHOLE IN YOUR TERMINAL TO INSTALL
-<i><b>sh -c "$(curl -fsSL https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)"</i></b>
+<i><b>
+'''
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)"
+'''
+</i></b>
 
 <b>Copy the link above and paste it to your terminal to run automated install </b>
 
