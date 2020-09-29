@@ -6,7 +6,7 @@
  TYPE THE FOLLOWING AS WHOLE IN YOUR TERMINAL TO INSTALL
 <i><b>
 ```bash
-sh -c "$(curl -fsSl- https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)
+sh -c "$(curl -fsSl https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)"
 ```
 </i></b>
 
