@@ -50,8 +50,10 @@ else
 fi
 
 
-cat <<EOT>> mikeylinux 
-echo"
+cat <<EOT>> launcher 
+#! /usr/bin/bash
+echo "
+
 /  \/  \/___\|  |  //   __\\  |  /  
 |  \/  ||   ||  _ < |   __| |   |   
 \__ \__/\___/|__|__\\_____/ \___/   
@@ -60,6 +62,7 @@ echo"
 /  _/  /___\/  _  \/  |  \/  \/  \  
 |  |---|   ||  |  ||  |  |>-    -<  
 \_____/\___/\__|__/\_____/\__/\__/ 
+
 "
 
 echo " Choose a number to enable the script to launch for you "
@@ -68,34 +71,42 @@ echo " [◉]  2. Install java properly {Arch linux}"
 echo " [◉]  3. Check other os and update grub {Arch linux}"
 echo " [◉]  4. Make ohmyzsh work on arch {Arch linux}"
 echo " [◉]  5. Make blackarchrepo install on arch {Arch linux}"
-
 echo " [◉]  0. Read license agreement"
 
-sudo echo "switching to install dir # now type a number"
+sudo echo "Enter a number # now type a number"
 cd $HOME/.automalibu/mikeylinuxep/
+
 read bazu
 
-#Tempfix
-
-if [ "$bazu" -eq "$a" ]; then
-	bash cariodock.sh
-	elif [ "$bazu" -eq "$b" ]; then
-		bash installjava.sh
-		elif [ "$bazu" -eq "$c" ]; then
-			bash oschecker.sh
-			elif [ "$bazu" -eq "$d" ]; then
-				bash ohmyzshonarch.sh
-				elif [ "$bazu" -eq "$e" ]; then
-					bash blackarchrepo.sh
-					elif [ "$bazu" -eq "$f" ]; then
-						cat  LICENSE
-						else
-							echo "no option selected"
+if [[ "$bazu" -eq 1 ]]; then
+	 ./cariodock.sh
+elif [[ "$bazu" -eq 2 ]]; then
+	./installjava.sh
+elif [[ "$bazu" -eq 3 ]]; then
+	./oschecker.sh
+elif [[ "$bazu" -eq 4 ]]; then
+	./ohmyzshonarch.sh
+elif [[ "$bazu" -eq 5 ]]; then
+	./blackarchrepo.sh
+elif [[ "$bazu" -eq 0 ]]; then
+	cat LICENSE
+else
+	echo "funny thing happened"
 fi
+EOT
+
+chmod +x launcher
+
+cat <<EOT>> mikeylinux
+sudo echo "script is ready to launch"
+cd $HOME/.automalibu/
+bash launcher
+
 
 EOT
+
 chmod +x mikeylinux
-sudo mv mikeylinux /bin
+sudo mv mikeylinux /usr/local/bin
 
 #source $HOME/.zshrc
 source $HOME/.bashrc
