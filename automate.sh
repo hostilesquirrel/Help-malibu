@@ -50,7 +50,7 @@ else
 fi
 
 
-cat <<EOT>> launcher 
+cat << \EOT>> launcher 
 #! /usr/bin/bash
 echo "
 
@@ -97,7 +97,7 @@ EOT
 
 chmod +x launcher
 
-cat <<EOT>> mikeylinux
+cat << \EOT>> mikeylinux
 sudo echo "script is ready to launch"
 cd $HOME/.automalibu/
 bash launcher
