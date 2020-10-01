@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#! /bin/bash
 # Must run as root
 
 #This script is intended to make the installateion of my scripts easier
@@ -51,7 +51,7 @@ fi
 
 
 cat << \EOT>> launcher 
-#! /usr/bin/bash
+#! /bin/bash
 echo "
 
 /  \/  \/___\|  |  //   __\\  |  /  
