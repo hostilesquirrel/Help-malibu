@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#! /bin/bash
 
 if !commmand -v wget &> /dev/null
 then

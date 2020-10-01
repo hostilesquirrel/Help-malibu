@@ -1,5 +1,4 @@
-#! /usr/bin/bash
-#!/bin/bash
+#! /bin/bash
 
 #Avoid stresses of checking if your windows installation is there
 

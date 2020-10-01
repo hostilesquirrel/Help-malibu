@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#! /bin/bash
 
 echo "[✔] Installing cairo dock the right way"
 sleep 1

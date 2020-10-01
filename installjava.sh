@@ -1,5 +1,4 @@
-#! /usr/bin/bash
-#!/bin/bash
+#! /bin/bash
 
 #Script written by malibu to install java, built for the pacman -Syu group
 if !commmand -v wget &> /dev/null

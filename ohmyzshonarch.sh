@@ -1,3 +1,5 @@
+#! /bin/bash
+
 echo "Zsh themes will refuse to work sometimes"
 echo "This script will remove grml-zsh-config to make it work"
 echo "Open new terminal after complition"
