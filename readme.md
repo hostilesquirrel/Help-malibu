@@ -24,6 +24,7 @@ Install cairodock with all its dependancies and avoid googling
 <hr>
 <b>3. oschecker.sh {Arch Linux}</b>
 well after os probing you have to update grub, thats why i am here for you
+<hr>
 <b>4. blackarchrepo.sh {Arch Linux}</b>
 Installs blackarchrepo, saves you the time googling
 <hr>
