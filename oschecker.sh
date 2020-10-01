@@ -10,7 +10,7 @@ else
 	echo "Checking and istalling os-prober"
 fi
 
-os-prober
+sudo os-prober
 
 echo "Did you see your operating system, type y/n"
 read xinput
