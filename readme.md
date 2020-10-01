@@ -12,23 +12,26 @@ sh -c "$(curl -fsSl https://raw.githubusercontent.com/hostilesquirrel/mikeylinux
 
 <b>Copy the link above and paste it to your terminal to run automated install </b>
 
-
-### blackarchrepo.sh {Arch linux}
-
-<i>is a script to help arch linux users run and install arch linux repo</i>
+### SCRIPTS AVAILABLE SO FAR
 
 
-### installjava.sh  {Arch linux}
-<i> script to check wether jre and jdk are installed and install them </i>
+
+<b>1. installjava.sh {Arch Linux}</b>
+What better way than to install java the right way lazily
+<hr>
+<b>2. cariodock.sh {Arch Linux}</b>
+Install cairodock with all its dependancies and avoid googling
+<hr>
+<b>3. oschecker.sh {Arch Linux}</b>
+well after os probing you have to update grub, thats why i am here for you
+<b>4. blackarchrepo.sh {Arch Linux}</b>
+Installs blackarchrepo, saves you the time googling
+<hr>
 
 
-### cairodock.sh    {Arch linux}
-<i> This script installs cairodock properly</i>
+### The following scripts are tailored for lazy people
+### Join us
 
-### oschecker.sh {Arch linux}
 
-<i>Dual boost is the worst, detect and update grub with this script</i>
 
-### ohmyzshonarch.sh {Arch linux}
 
-<i> Oh my zsh themes wont work, now let them work with this script</i>
