@@ -68,8 +68,9 @@ echo "
 echo " Choose the kinda help that you need from mikey "
 echo " [◉]  1. Pacman Based Distros (ArchLInux & Manjaro etc)"
 echo " [◉]  2. Debian Based Distros (All apt distros Parrot, Ubuntu etc)"
-echo " [◉]  3. Windows Operating system 
+echo " [◉]  3. Windows Operating system" 
 echo " [◉]  4. Ethical Hacking [Recon & Automate]"
+echo " [◉]  5. Update mikey linux to get the latest feutures and updates"
 
 
 sudo echo "Enter a number # now type a number"
@@ -77,7 +78,7 @@ cd $HOME/.automalibu/mikeylinuxep/
 
 read kaki
 
-if [[ "$kaki" -eq 1]]; then
+if [[ "$kaki" -eq 1 ]]; then
 clear
 echo " [◉]  1. Launch cairo dock installer {Arch linux}"
 echo " [◉]  2. Install java properly {Arch linux}"
@@ -103,11 +104,13 @@ elif [[ "$bazu" -eq 0 ]]; then
 	cat LICENSE
 else
 	echo "funny thing happened"
+fi
 
 
 #
 # The following segment holds debian based script launching
 #
+
 elif [[ "$kaki" -eq 2 ]]; then
 clear
 echo " [◉] Hold on as i construct the best Debian Based Helper for you"
@@ -116,7 +119,7 @@ echo " [◉] Hold on as i construct the best Debian Based Helper for you"
 #The following segment holds scripts to help windows based beginners and admins
 #
 
-elif [[ "$kaki" -eq 3]]; then
+elif [[ "$kaki" -eq 3 ]]; then
 clear
 echo " [◉]  Hold on as we construct windows admin photos for you"
 
@@ -127,30 +130,14 @@ elif [[ "$kaki" -eq 4 ]]; then
 clear
 echo " [◉] Hold an as we compile the best ethical hacking scripts"
 
+elif [[ "$kaki" -eq 5 ]]; then
+clear
+echo "[◉] Updaating is Beginning, Script looks similar to installing"
+rm -rf $HOME/.automalibu
+sh -c "$(curl -fsSl https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)"
+
 else
  echo " funny you should mention that we are still constructing the scripts for you"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 fi
 EOT
 
