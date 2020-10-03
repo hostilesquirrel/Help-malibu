@@ -65,19 +65,30 @@ echo "
 
 "
 
-echo " Choose a number to enable the script to launch for you "
+echo " Choose the kinda help that you need from mikey "
+echo " [◉]  1. Pacman Based Distros (ArchLInux & Manjaro etc)"
+echo " [◉]  2. Debian Based Distros (All apt distros Parrot, Ubuntu etc)"
+echo " [◉]  3. Windows Operating system 
+echo " [◉]  4. Ethical Hacking [Recon & Automate]"
+
+
+sudo echo "Enter a number # now type a number"
+cd $HOME/.automalibu/mikeylinuxep/
+
+read kaki
+
+if [[ "$kaki" -eq 1]]; then
+clear
 echo " [◉]  1. Launch cairo dock installer {Arch linux}"
 echo " [◉]  2. Install java properly {Arch linux}"
 echo " [◉]  3. Check other os and update grub {Arch linux}"
 echo " [◉]  4. Make ohmyzsh work on arch {Arch linux}"
 echo " [◉]  5. Make blackarchrepo install on arch {Arch linux}"
 echo " [◉]  0. Read license agreement"
-
-sudo echo "Enter a number # now type a number"
-cd $HOME/.automalibu/mikeylinuxep/
+sleep 1
+echo " Choose a number to enable the script to launch for you "
 
 read bazu
-
 if [[ "$bazu" -eq 1 ]]; then
 	 ./cariodock.sh
 elif [[ "$bazu" -eq 2 ]]; then
@@ -92,6 +103,54 @@ elif [[ "$bazu" -eq 0 ]]; then
 	cat LICENSE
 else
 	echo "funny thing happened"
+
+
+#
+# The following segment holds debian based script launching
+#
+elif [[ "$kaki" -eq 2 ]]; then
+clear
+echo " [◉] Hold on as i construct the best Debian Based Helper for you"
+
+#
+#The following segment holds scripts to help windows based beginners and admins
+#
+
+elif [[ "$kaki" -eq 3]]; then
+clear
+echo " [◉]  Hold on as we construct windows admin photos for you"
+
+#
+#The following segmennt holds scripts designed to assist in Ethical hacking reconnaissence process
+#
+elif [[ "$kaki" -eq 4 ]]; then
+clear
+echo " [◉] Hold an as we compile the best ethical hacking scripts"
+
+else
+ echo " funny you should mention that we are still constructing the scripts for you"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 fi
 EOT
 
