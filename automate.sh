@@ -103,6 +103,7 @@ elif [[ "$bazu" -eq 4 ]]; then
 elif [[ "$bazu" -eq 5 ]]; then
 	./blackarchrepo.sh
 elif [[ "$bazu" -eq 0 ]]; then
+	cd $HOME/.automalibu/mikeylinuxep/
 	cat LICENSE
 else
 	echo "funny thing happened"
