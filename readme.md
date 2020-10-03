@@ -1,7 +1,7 @@
 ### Scripts and Uses
 
 ### HOW TO RUN GUIDED INSTALL
-<img align="center" src="https://user-images.githubusercontent.com/44660508/94989559-757bd500-057e-11eb-8be1-3f73aeafa6d0.png">
+<img align="center" width=300 height=500 src="https://user-images.githubusercontent.com/44660508/94989559-757bd500-057e-11eb-8be1-3f73aeafa6d0.png">
 
  TYPE THE FOLLOWING AS WHOLE IN YOUR TERMINAL TO INSTALL
 <i><b>
