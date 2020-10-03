@@ -78,7 +78,9 @@ cd $HOME/.automalibu/mikeylinuxep/
 
 read kaki
 
+
 if [[ "$kaki" -eq 1 ]]; then
+cd $HOME/.automalibu/mikeylinuxep/pacman
 clear
 echo " [◉]  1. Launch cairo dock installer {Arch linux}"
 echo " [◉]  2. Install java properly {Arch linux}"
@@ -112,6 +114,7 @@ fi
 #
 
 elif [[ "$kaki" -eq 2 ]]; then
+cd $HOME/.automalibu/mikeylinuxep/debian
 clear
 echo " [◉] Hold on as i construct the best Debian Based Helper for you"
 
@@ -120,6 +123,7 @@ echo " [◉] Hold on as i construct the best Debian Based Helper for you"
 #
 
 elif [[ "$kaki" -eq 3 ]]; then
+cd $HOME/.automalibu/mikeylinuxep/windows
 clear
 echo " [◉]  Hold on as we construct windows admin photos for you"
 
@@ -127,6 +131,7 @@ echo " [◉]  Hold on as we construct windows admin photos for you"
 #The following segmennt holds scripts designed to assist in Ethical hacking reconnaissence process
 #
 elif [[ "$kaki" -eq 4 ]]; then
+cd $HOME/.automalibu/mikeylinuxep/hackerman
 clear
 echo " [◉] Hold an as we compile the best ethical hacking scripts"
 
