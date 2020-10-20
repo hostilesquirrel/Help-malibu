@@ -3,7 +3,7 @@
 #Avoid stresses of checking if your windows installation is there
 
 #Run this script as root
-if !commmand -v os-prober &> /dev/null
+if !command -v os-prober &> /dev/null
 then
 	sudo pacman -S os-prober
 else

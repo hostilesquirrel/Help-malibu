@@ -1,7 +1,7 @@
 #! /bin/bash
 
 #Script written by malibu to install java, built for the pacman -Syu group
-if !commmand -v wget &> /dev/null
+if ! command -v wget &> /dev/null
 then
 	echo "Installing dependancies command not found, installing first if fail no internet connection retry"
 	sudo pacman -S wget
