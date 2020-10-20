@@ -1,7 +1,8 @@
 #! /bin/bash
 
-echo " Solution for Segmentation fault codeblocks-arch "
+clear
+echo "[✔]Solving segmentation fault error codeblocks "
+echo "[✔]Select your compiler of choice from the menu that appears"
 sleep 1
 
-echo " Select GNU/GCC and set default on the pop up that appears/ else run as sudo"
 codeblocks --rebuild gnu/gcc
