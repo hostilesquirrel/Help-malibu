@@ -4,7 +4,7 @@ The intentions of this scripts are to help install dependancies the right way
 and avoid prestigious time googling
 
 
-Just copy the following command to install the script and choose from the availably made
+Just copy the following command and paste in your terminal to install the script and choose from the availably made
 
 
 // errors may be met as it still in construction
