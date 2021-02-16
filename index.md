@@ -8,7 +8,7 @@ Just copy the following command and paste in your terminal to install the script
 
 
 // errors may be met as it still in construction
-
+//PLEASE NOTE IF COPY PASTING DOESN'T GIVES AN ERROR #! -- TYPE THE WHOLE COMMAND IN YOUR TERMINAL
 <p> <a href="sh -c “$(curl -fsSl https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)">
 sh -c "$(curl -fsSl https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)" </a>
 <p>
