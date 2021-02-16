@@ -7,7 +7,7 @@ and avoid prestigious time googling
 Just copy the following command and paste in your terminal to install the script and choose from the availably made
 
 
-// errors may be met as it still in construction -- 1.Copy by left clicking
+// errors may be met as it still in construction -- 1.Copy by highlighting link in blue and coping
 
 <p> <a href="sh -c “$(curl -fsSl https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)">
 sh -c "$(curl -fsSl https://raw.githubusercontent.com/hostilesquirrel/mikeylinuxep/master/automate.sh)" </a>
