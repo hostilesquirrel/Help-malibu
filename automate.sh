@@ -35,7 +35,7 @@ if [ -d "$HOME/.automalibu/" ]; then
 		git clone https://github.com/hostilesquirrel/mikeylinuxep
 	else
 		if [ "$kalpana" = "n" ]; then
-			echo "[✘] I have exceeded my thinking, fuck you[✘] ";
+			echo "[✘] well how bout that have a nice day[✘] ";
             exit
 		fi
 	fi
